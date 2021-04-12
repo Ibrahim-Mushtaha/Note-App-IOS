@@ -185,8 +185,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JAN-88-wZ0" userLabel="uiToolbarView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLu-PZ-6Qw">
-                                <rect key="frame" x="20" y="157" width="42" height="21"/>
+                                <rect key="frame" x="20" y="144" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -195,23 +199,29 @@
                         <viewLayoutGuide key="safeArea" id="Zka-2C-oxL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="RLu-PZ-6Qw" firstAttribute="top" secondItem="Zka-2C-oxL" secondAttribute="top" constant="17" id="5jD-DH-dMC"/>
+                            <constraint firstItem="JAN-88-wZ0" firstAttribute="centerX" secondItem="TJd-a3-0dq" secondAttribute="centerX" id="JpI-eH-j2l"/>
+                            <constraint firstAttribute="bottom" secondItem="JAN-88-wZ0" secondAttribute="bottom" constant="768" id="Kv3-SV-aTe"/>
                             <constraint firstItem="RLu-PZ-6Qw" firstAttribute="leading" secondItem="Zka-2C-oxL" secondAttribute="leading" constant="20" id="NRS-1P-Pdi"/>
+                            <constraint firstItem="JAN-88-wZ0" firstAttribute="top" secondItem="TJd-a3-0dq" secondAttribute="topMargin" constant="-44" id="kvt-tJ-yKm"/>
+                            <constraint firstItem="RLu-PZ-6Qw" firstAttribute="top" secondItem="JAN-88-wZ0" secondAttribute="bottom" constant="16" id="rsZ-iM-BYq"/>
+                            <constraint firstItem="JAN-88-wZ0" firstAttribute="width" secondItem="TJd-a3-0dq" secondAttribute="width" id="yid-kz-fXb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="znQ-yz-kDf"/>
+                    <connections>
+                        <outlet property="uiToolbarView" destination="JAN-88-wZ0" id="j36-MZ-EoY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KxY-4C-b51" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2161" y="117"/>
+            <point key="canvasLocation" x="2160.8695652173915" y="116.51785714285714"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iN5-fN-YaW">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hR7-yW-hdF" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="hR7-yW-hdF" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="eBB-n2-VI3">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="1" green="0.62001818590000002" blue="0.36055449649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -248,6 +258,9 @@
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -107,10 +107,29 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T9Q-BY-eIT">
                                 <rect key="frame" x="16" y="138" width="382" height="465"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="46s-QI-sPH">
+                                        <rect key="frame" x="24" y="385" width="334" height="56"/>
+                                        <color key="backgroundColor" red="1" green="0.62001818590000002" blue="0.36055449649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="pzu-Ev-5mo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Sign Up"/>
+                                        <connections>
+                                            <action selector="btnSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bsS-mZ-769"/>
+                                            <action selector="uiBtnSignUp:" destination="WWa-ZC-Cz1" eventType="touchUpInside" id="oTA-67-gmU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="465" id="I8V-kj-PH6"/>
+                                    <constraint firstAttribute="trailing" secondItem="46s-QI-sPH" secondAttribute="trailing" constant="24" id="MBv-DL-LX1"/>
                                     <constraint firstAttribute="width" constant="382" id="Zhe-MA-JCp"/>
+                                    <constraint firstAttribute="bottom" secondItem="46s-QI-sPH" secondAttribute="bottom" constant="24" id="cpJ-iK-nQF"/>
+                                    <constraint firstItem="46s-QI-sPH" firstAttribute="leading" secondItem="T9Q-BY-eIT" secondAttribute="leading" constant="24" id="sr7-cf-ESp"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up to store" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3O-g1-gQo">
@@ -194,11 +213,22 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="eBB-n2-VI3">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="1" green="0.62001818590000002" blue="0.36055449649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" systemColor="linkColor"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wvp-VD-cTJ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="bTW-t1-h5L" kind="relationship" relationship="rootViewController" id="uaC-FH-izt"/>
                     </connections>
@@ -213,9 +243,6 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

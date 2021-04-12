@@ -18,7 +18,16 @@ class SignUpViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    
+    @IBAction func uiBtnSignUp(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle:.main)
+        if let vc = storyboard.instantiateViewController(identifier: "Home") as? HomeViewController{
+            vc.modalTransitionStyle = .crossDissolve
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: true, completion: nil)
+        }
+    }
+    
     @IBAction func uiBtnDismiss(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }

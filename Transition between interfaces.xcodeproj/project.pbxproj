@@ -15,6 +15,7 @@
 		A25E3317262451890018221A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25E3315262451890018221A /* LaunchScreen.storyboard */; };
 		A25E3322262451890018221A /* Transition_between_interfacesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25E3321262451890018221A /* Transition_between_interfacesTests.swift */; };
 		A25E332D262451890018221A /* Transition_between_interfacesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25E332C262451890018221A /* Transition_between_interfacesUITests.swift */; };
+		A25E333E262456700018221A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25E333D262456700018221A /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		A25E3328262451890018221A /* Transition between interfacesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Transition between interfacesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A25E332C262451890018221A /* Transition_between_interfacesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition_between_interfacesUITests.swift; sourceTree = "<group>"; };
 		A25E332E262451890018221A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A25E333D262456700018221A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				A25E3313262451890018221A /* Assets.xcassets */,
 				A25E3315262451890018221A /* LaunchScreen.storyboard */,
 				A25E3318262451890018221A /* Info.plist */,
+				A25E333D262456700018221A /* SignUpViewController.swift */,
 			);
 			path = "Transition between interfaces";
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			files = (
 				A25E330F262451880018221A /* ViewController.swift in Sources */,
 				A25E330B262451880018221A /* AppDelegate.swift in Sources */,
+				A25E333E262456700018221A /* SignUpViewController.swift in Sources */,
 				A25E330D262451880018221A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

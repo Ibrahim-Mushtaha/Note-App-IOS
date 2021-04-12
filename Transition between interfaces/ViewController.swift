@@ -17,18 +17,29 @@ class ViewController: UIViewController {
         uiContanier.addCorner()
     }
 
+    @IBAction func btnSignIn(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle:.main)
+        if let vc = storyboard.instantiateViewController(identifier: "Home") as? HomeViewController{
+            vc.modalTransitionStyle = .crossDissolve
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: true, completion: nil)
+        }
+    }
+    
+    
+    
     @IBAction func btnCreateNew(_ sender: UIButton) {
         performSegue(withIdentifier: "actionSequa", sender: nil)
     }
     
     // to send date between the two uiController
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+   /* override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "actionSequa" {
             if let details = segue.destination as? SignUpViewController{
                 
             }
         }
-    }
+    }*/
     
 }
 

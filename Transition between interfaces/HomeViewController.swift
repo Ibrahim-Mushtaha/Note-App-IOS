@@ -13,7 +13,7 @@ class HomeViewController: UIViewController {
     
     
 
-    let dataCategory = [Category(image: "chemistry", name: "Chemistry"),Category(image: "math", name: "Math"),Category(image: "tech", name: "Technology")]
+    let dataCategory = [Category(about: "chemistry qwerw rqwerddsaf dsffasf", name: "ahmed"),Category(about: "math dsf qewrt rtret wert we ", name: "ali"),Category(about: "tech dasfsd fasdf adf asf", name: "omar")]
     
     
     

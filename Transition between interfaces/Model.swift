@@ -9,7 +9,7 @@ import Foundation
 
 
 struct Category{
-    let image:String
+    let about:String
     let name:String
     
 }

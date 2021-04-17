@@ -7,18 +7,13 @@
 
 import UIKit
 
-struct User {
-    var name:String,
-     jobTitle:String,
-     about:String
-}
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var uiTableView: UITableView!
     
     
-    let data = [0:["rwer"],1:["qesdfa"]]
-    let dataUser = [User(name: "ahmed", jobTitle: "Ux/Ui designer", about: "erwth iowertkjgfsklj"),User(name: "ali", jobTitle: "IOS developer", about: "ertwer tghdf h dfg")]
+
+    let dataCategory = [Category(image: "chemistry", name: "Chemistry"),Category(image: "math", name: "Math"),Category(image: "tech", name: "Technology")]
     
     
     
@@ -26,6 +21,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
        
         uiTableView.dataSource = self
+        uiTableView.delegate = self
     
         // Do any additional setup after loading the view.
     }
@@ -33,17 +29,29 @@ class HomeViewController: UIViewController {
     
 }
 
-extension HomeViewController:UITableViewDataSource{
+extension HomeViewController: UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataUser.count
+        return dataCategory.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell  = tableView.dequeueReusableCell(withIdentifier: "cell",for: indexPath)
-        let text = dataUser[indexPath.row].name
+        let text = dataCategory[indexPath.row].name
         cell.textLabel?.text = text
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+                let viewC = storyBoard.instantiateViewController(withIdentifier: "DetailVC") as! DetailsViewController
+        
+        viewC.category = dataCategory[indexPath.row]
+               present(viewC, animated: true, completion: nil)
+    
+
+    
+
     }
     
     

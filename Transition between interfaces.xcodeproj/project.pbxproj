@@ -17,6 +17,8 @@
 		A25E332D262451890018221A /* Transition_between_interfacesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25E332C262451890018221A /* Transition_between_interfacesUITests.swift */; };
 		A25E333E262456700018221A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25E333D262456700018221A /* SignUpViewController.swift */; };
 		A25E334326249DA80018221A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25E334226249DA80018221A /* HomeViewController.swift */; };
+		A2966671262B1A1100A197FC /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2966670262B1A1100A197FC /* DetailsViewController.swift */; };
+		A2966676262B1BD800A197FC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2966675262B1BD800A197FC /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		A25E332E262451890018221A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A25E333D262456700018221A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A25E334226249DA80018221A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A2966670262B1A1100A197FC /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		A2966675262B1BD800A197FC /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 				A25E3318262451890018221A /* Info.plist */,
 				A25E333D262456700018221A /* SignUpViewController.swift */,
 				A25E334226249DA80018221A /* HomeViewController.swift */,
+				A2966670262B1A1100A197FC /* DetailsViewController.swift */,
+				A2966675262B1BD800A197FC /* Model.swift */,
 			);
 			path = "Transition between interfaces";
 			sourceTree = "<group>";
@@ -264,11 +270,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2966676262B1BD800A197FC /* Model.swift in Sources */,
 				A25E334326249DA80018221A /* HomeViewController.swift in Sources */,
 				A25E330F262451880018221A /* ViewController.swift in Sources */,
 				A25E330B262451880018221A /* AppDelegate.swift in Sources */,
 				A25E333E262456700018221A /* SignUpViewController.swift in Sources */,
 				A25E330D262451880018221A /* SceneDelegate.swift in Sources */,
+				A2966671262B1A1100A197FC /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

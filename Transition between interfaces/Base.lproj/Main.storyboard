@@ -224,7 +224,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KxY-4C-b51" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2160.8695652173915" y="116.51785714285714"/>
+            <point key="canvasLocation" x="2299" y="117"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="DG0-zR-pdc">
+            <objects>
+                <viewController storyboardIdentifier="DetailVC" id="abc-6A-5ok" customClass="DetailsViewController" customModule="Transition_between_interfaces" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ng2-Ue-BcL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="pQn-lX-mHW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b3I-zo-EkC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3083" y="117"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iN5-fN-YaW">

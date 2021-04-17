@@ -7,29 +7,44 @@
 
 import UIKit
 
+struct User {
+    var name:String,
+     jobTitle:String,
+     about:String
+}
 class HomeViewController: UIViewController {
-
-    @IBOutlet weak var uiToolbarView: UIView!
+    
+    @IBOutlet weak var uiTableView: UITableView!
+    
+    
+    let data = [0:["rwer"],1:["qesdfa"]]
+    let dataUser = [User(name: "ahmed", jobTitle: "Ux/Ui designer", about: "erwth iowertkjgfsklj"),User(name: "ali", jobTitle: "IOS developer", about: "ertwer tghdf h dfg")]
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        
-        let rectShape = CAShapeLayer()
-        rectShape.bounds = uiToolbarView.frame
-        rectShape.position = uiToolbarView.center
-        rectShape.path = UIBezierPath(roundedRect: uiToolbarView.bounds, byRoundingCorners: [.bottomLeft , .bottomRight], cornerRadii: CGSize(width: 12, height: 12)).cgPath
-
-        uiToolbarView.layer.backgroundColor = UIColor.orange.cgColor
-        //Here I'm masking the textView's layer with rectShape layer
-        uiToolbarView.layer.mask = rectShape
-        uiToolbarView.dropShadow()
+        uiTableView.dataSource = self
+    
         // Do any additional setup after loading the view.
     }
     
-
     
+}
+
+extension HomeViewController:UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dataUser.count
+    }
     
-
-
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell  = tableView.dequeueReusableCell(withIdentifier: "cell",for: indexPath)
+        let text = dataUser[indexPath.row].name
+        cell.textLabel?.text = text
+        
+        return cell
+    }
+    
     
 }

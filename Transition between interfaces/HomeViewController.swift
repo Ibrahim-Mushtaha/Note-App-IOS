@@ -22,7 +22,7 @@ class HomeViewController: UIViewController {
        
         uiTableView.dataSource = self
         uiTableView.delegate = self
-    
+        
         // Do any additional setup after loading the view.
     }
     

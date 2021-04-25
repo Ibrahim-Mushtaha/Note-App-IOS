@@ -19,6 +19,9 @@
 		A25E334326249DA80018221A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25E334226249DA80018221A /* HomeViewController.swift */; };
 		A2966671262B1A1100A197FC /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2966670262B1A1100A197FC /* DetailsViewController.swift */; };
 		A2966676262B1BD800A197FC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2966675262B1BD800A197FC /* Model.swift */; };
+		A29FB6C826358A6900E9190C /* PickUpLines.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A29FB6C626358A6900E9190C /* PickUpLines.xcdatamodeld */; };
+		A29FB6CE26359DFD00E9190C /* Line+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29FB6CC26359DFD00E9190C /* Line+CoreDataClass.swift */; };
+		A29FB6CF26359DFD00E9190C /* Line+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29FB6CD26359DFD00E9190C /* Line+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		A25E334226249DA80018221A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A2966670262B1A1100A197FC /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		A2966675262B1BD800A197FC /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A29FB6C726358A6900E9190C /* PickUpLines.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PickUpLines.xcdatamodel; sourceTree = "<group>"; };
+		A29FB6CC26359DFD00E9190C /* Line+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Line+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A29FB6CD26359DFD00E9190C /* Line+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Line+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,7 @@
 		A25E3309262451880018221A /* Transition between interfaces */ = {
 			isa = PBXGroup;
 			children = (
+				A29FB6D326359EA500E9190C /* Model */,
 				A25E330A262451880018221A /* AppDelegate.swift */,
 				A25E330C262451880018221A /* SceneDelegate.swift */,
 				A25E330E262451880018221A /* ViewController.swift */,
@@ -118,6 +125,7 @@
 				A25E334226249DA80018221A /* HomeViewController.swift */,
 				A2966670262B1A1100A197FC /* DetailsViewController.swift */,
 				A2966675262B1BD800A197FC /* Model.swift */,
+				A29FB6C626358A6900E9190C /* PickUpLines.xcdatamodeld */,
 			);
 			path = "Transition between interfaces";
 			sourceTree = "<group>";
@@ -138,6 +146,15 @@
 				A25E332E262451890018221A /* Info.plist */,
 			);
 			path = "Transition between interfacesUITests";
+			sourceTree = "<group>";
+		};
+		A29FB6D326359EA500E9190C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A29FB6CC26359DFD00E9190C /* Line+CoreDataClass.swift */,
+				A29FB6CD26359DFD00E9190C /* Line+CoreDataProperties.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,10 +290,13 @@
 				A2966676262B1BD800A197FC /* Model.swift in Sources */,
 				A25E334326249DA80018221A /* HomeViewController.swift in Sources */,
 				A25E330F262451880018221A /* ViewController.swift in Sources */,
+				A29FB6CE26359DFD00E9190C /* Line+CoreDataClass.swift in Sources */,
 				A25E330B262451880018221A /* AppDelegate.swift in Sources */,
+				A29FB6CF26359DFD00E9190C /* Line+CoreDataProperties.swift in Sources */,
 				A25E333E262456700018221A /* SignUpViewController.swift in Sources */,
 				A25E330D262451880018221A /* SceneDelegate.swift in Sources */,
 				A2966671262B1A1100A197FC /* DetailsViewController.swift in Sources */,
+				A29FB6C826358A6900E9190C /* PickUpLines.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,6 +623,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A29FB6C626358A6900E9190C /* PickUpLines.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A29FB6C726358A6900E9190C /* PickUpLines.xcdatamodel */,
+			);
+			currentVersion = A29FB6C726358A6900E9190C /* PickUpLines.xcdatamodel */;
+			path = PickUpLines.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A25E32FF262451880018221A /* Project object */;
 }

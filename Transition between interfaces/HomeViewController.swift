@@ -83,6 +83,8 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate{
     
 
     }
+    
+    // to delete the item
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         guard editingStyle == .delete else {return}
         let lineToRemove = self.data[indexPath.row]

@@ -11,7 +11,7 @@ import CoreData
 
 
 extension Line {
-
+	
     @nonobjc public class func fetchRequest() -> NSFetchRequest<Line> {
         return NSFetchRequest<Line>(entityName: "Line")
     }

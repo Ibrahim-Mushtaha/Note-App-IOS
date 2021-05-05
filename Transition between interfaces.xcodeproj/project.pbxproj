@@ -94,19 +94,15 @@
 		A25E3309262451880018221A /* Transition between interfaces */ = {
 			isa = PBXGroup;
 			children = (
+				A2BF8E302642C7EB007D2495 /* db */,
+				A2BF8E2F2642C7AF007D2495 /* Ui */,
+				A2BF8E2B2642C70B007D2495 /* ViewController */,
 				A29FB6D326359EA500E9190C /* Model */,
 				A25E330A262451880018221A /* AppDelegate.swift */,
 				A25E330C262451880018221A /* SceneDelegate.swift */,
-				A25E330E262451880018221A /* ViewController.swift */,
-				A25E3310262451880018221A /* Main.storyboard */,
 				A25E3313262451890018221A /* Assets.xcassets */,
-				A25E3315262451890018221A /* LaunchScreen.storyboard */,
 				A25E3318262451890018221A /* Info.plist */,
-				A25E333D262456700018221A /* SignUpViewController.swift */,
-				A25E334226249DA80018221A /* HomeViewController.swift */,
-				A2966670262B1A1100A197FC /* AddNoteViewController.swift */,
 				A2966675262B1BD800A197FC /* Model.swift */,
-				A29FB6C626358A6900E9190C /* PickUpLines.xcdatamodeld */,
 			);
 			path = "Transition between interfaces";
 			sourceTree = "<group>";
@@ -118,6 +114,34 @@
 				A29FB6CD26359DFD00E9190C /* Line+CoreDataProperties.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A2BF8E2B2642C70B007D2495 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A25E330E262451880018221A /* ViewController.swift */,
+				A25E333D262456700018221A /* SignUpViewController.swift */,
+				A25E334226249DA80018221A /* HomeViewController.swift */,
+				A2966670262B1A1100A197FC /* AddNoteViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A2BF8E2F2642C7AF007D2495 /* Ui */ = {
+			isa = PBXGroup;
+			children = (
+				A25E3315262451890018221A /* LaunchScreen.storyboard */,
+				A25E3310262451880018221A /* Main.storyboard */,
+			);
+			path = Ui;
+			sourceTree = "<group>";
+		};
+		A2BF8E302642C7EB007D2495 /* db */ = {
+			isa = PBXGroup;
+			children = (
+				A29FB6C626358A6900E9190C /* PickUpLines.xcdatamodeld */,
+			);
+			path = db;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

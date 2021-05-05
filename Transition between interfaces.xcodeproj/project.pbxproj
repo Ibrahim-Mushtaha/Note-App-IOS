@@ -13,8 +13,6 @@
 		A25E3312262451880018221A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25E3310262451880018221A /* Main.storyboard */; };
 		A25E3314262451890018221A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A25E3313262451890018221A /* Assets.xcassets */; };
 		A25E3317262451890018221A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25E3315262451890018221A /* LaunchScreen.storyboard */; };
-		A25E3322262451890018221A /* Transition_between_interfacesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25E3321262451890018221A /* Transition_between_interfacesTests.swift */; };
-		A25E332D262451890018221A /* Transition_between_interfacesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25E332C262451890018221A /* Transition_between_interfacesUITests.swift */; };
 		A25E333E262456700018221A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25E333D262456700018221A /* SignUpViewController.swift */; };
 		A25E334326249DA80018221A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25E334226249DA80018221A /* HomeViewController.swift */; };
 		A2966671262B1A1100A197FC /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2966670262B1A1100A197FC /* AddNoteViewController.swift */; };
@@ -42,7 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A25E3307262451880018221A /* Transition between interfaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Transition between interfaces.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A25E3307262451880018221A /* Transition between interfaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Transition between interfaces.app"; path = "/Users/ibrahimmushtaha/Desktop/Project/Transition between interfaces/build/Debug-iphoneos/Transition between interfaces.app"; sourceTree = "<absolute>"; };
 		A25E330A262451880018221A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A25E330C262451880018221A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A25E330E262451880018221A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,12 +48,8 @@
 		A25E3313262451890018221A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A25E3316262451890018221A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A25E3318262451890018221A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A25E331D262451890018221A /* Transition between interfacesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Transition between interfacesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A25E3321262451890018221A /* Transition_between_interfacesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition_between_interfacesTests.swift; sourceTree = "<group>"; };
-		A25E3323262451890018221A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A25E3328262451890018221A /* Transition between interfacesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Transition between interfacesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A25E332C262451890018221A /* Transition_between_interfacesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition_between_interfacesUITests.swift; sourceTree = "<group>"; };
-		A25E332E262451890018221A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A25E331D262451890018221A /* Transition between interfacesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Transition between interfacesTests.xctest"; path = "/Users/ibrahimmushtaha/Desktop/Project/Transition between interfaces/build/Debug-iphoneos/Transition between interfacesTests.xctest"; sourceTree = "<absolute>"; };
+		A25E3328262451890018221A /* Transition between interfacesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Transition between interfacesUITests.xctest"; path = "/Users/ibrahimmushtaha/Desktop/Project/Transition between interfaces/build/Debug-iphoneos/Transition between interfacesUITests.xctest"; sourceTree = "<absolute>"; };
 		A25E333D262456700018221A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A25E334226249DA80018221A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A2966670262B1A1100A197FC /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
@@ -94,20 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				A25E3309262451880018221A /* Transition between interfaces */,
-				A25E3320262451890018221A /* Transition between interfacesTests */,
-				A25E332B262451890018221A /* Transition between interfacesUITests */,
-				A25E3308262451880018221A /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		A25E3308262451880018221A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A25E3307262451880018221A /* Transition between interfaces.app */,
-				A25E331D262451890018221A /* Transition between interfacesTests.xctest */,
-				A25E3328262451890018221A /* Transition between interfacesUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		A25E3309262451880018221A /* Transition between interfaces */ = {
@@ -128,24 +109,6 @@
 				A29FB6C626358A6900E9190C /* PickUpLines.xcdatamodeld */,
 			);
 			path = "Transition between interfaces";
-			sourceTree = "<group>";
-		};
-		A25E3320262451890018221A /* Transition between interfacesTests */ = {
-			isa = PBXGroup;
-			children = (
-				A25E3321262451890018221A /* Transition_between_interfacesTests.swift */,
-				A25E3323262451890018221A /* Info.plist */,
-			);
-			path = "Transition between interfacesTests";
-			sourceTree = "<group>";
-		};
-		A25E332B262451890018221A /* Transition between interfacesUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A25E332C262451890018221A /* Transition_between_interfacesUITests.swift */,
-				A25E332E262451890018221A /* Info.plist */,
-			);
-			path = "Transition between interfacesUITests";
 			sourceTree = "<group>";
 		};
 		A29FB6D326359EA500E9190C /* Model */ = {
@@ -244,7 +207,7 @@
 				Base,
 			);
 			mainGroup = A25E32FE262451880018221A;
-			productRefGroup = A25E3308262451880018221A /* Products */;
+			productRefGroup = A25E32FE262451880018221A;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -304,7 +267,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A25E3322262451890018221A /* Transition_between_interfacesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +274,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A25E332D262451890018221A /* Transition_between_interfacesUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

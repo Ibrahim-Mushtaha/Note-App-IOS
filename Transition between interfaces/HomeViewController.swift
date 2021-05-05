@@ -7,18 +7,19 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, DataChange {
+    
+    
+    func onChangeData() {
+        fetchData()
+    }
+    
     
     @IBOutlet weak var uiTableView: UITableView!
     
     var data:[Line] = []
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    
-    
-    let dataCategory = [Category(about: "chemistry qwerw rqwerddsaf dsffasf", name: "ahmed"),Category(about: "math dsf qewrt rtret wert we ", name: "ali"),Category(about: "tech dasfsd fasdf adf asf", name: "omar")]
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +29,12 @@ class HomeViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         fetchData()
-        addNote()
+        //addNote()
+    }
+    
+    
+    @IBAction func btnAddNote(_ sender: UIButton) {
+       moveToAddNote(line: nil)
     }
     
     fileprivate func fetchData(){
@@ -45,7 +51,7 @@ class HomeViewController: UIViewController {
  
     fileprivate func addNote(){
         let newLine = Line(context: self.context)
-        newLine.name = "ibrahim"
+        newLine.name = "Omar"
         newLine.note = "test note"
         do{
             try self.context.save()
@@ -53,6 +59,15 @@ class HomeViewController: UIViewController {
             
         }
         self.fetchData()
+    }
+    
+    
+    func moveToAddNote(line:Line?){
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+                let viewC = storyBoard.instantiateViewController(withIdentifier: "DetailVC") as! AddNoteViewController
+        viewC.onChange = self
+        viewC.line = line
+               present(viewC, animated: true, completion: nil)
     }
     
 }
@@ -72,15 +87,8 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
       
-        /*
-        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-                let viewC = storyBoard.instantiateViewController(withIdentifier: "DetailVC") as! DetailsViewController
-        
-        viewC.category = dataCategory[indexPath.row]
-               present(viewC, animated: true, completion: nil)
-    	*/
-
-    
+        moveToAddNote(line: data[indexPath.row])
+    	
 
     }
     

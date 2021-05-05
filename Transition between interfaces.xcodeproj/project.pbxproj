@@ -40,7 +40,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A25E3307262451880018221A /* Transition between interfaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Transition between interfaces.app"; path = "/Users/ibrahimmushtaha/Desktop/Project/Transition between interfaces/build/Debug-iphoneos/Transition between interfaces.app"; sourceTree = "<absolute>"; };
 		A25E330A262451880018221A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A25E330C262451880018221A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A25E330E262451880018221A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,8 +47,6 @@
 		A25E3313262451890018221A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A25E3316262451890018221A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A25E3318262451890018221A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A25E331D262451890018221A /* Transition between interfacesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Transition between interfacesTests.xctest"; path = "/Users/ibrahimmushtaha/Desktop/Project/Transition between interfaces/build/Debug-iphoneos/Transition between interfacesTests.xctest"; sourceTree = "<absolute>"; };
-		A25E3328262451890018221A /* Transition between interfacesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Transition between interfacesUITests.xctest"; path = "/Users/ibrahimmushtaha/Desktop/Project/Transition between interfaces/build/Debug-iphoneos/Transition between interfacesUITests.xctest"; sourceTree = "<absolute>"; };
 		A25E333D262456700018221A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A25E334226249DA80018221A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A2966670262B1A1100A197FC /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +54,9 @@
 		A29FB6C726358A6900E9190C /* PickUpLines.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PickUpLines.xcdatamodel; sourceTree = "<group>"; };
 		A29FB6CC26359DFD00E9190C /* Line+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Line+CoreDataClass.swift"; sourceTree = "<group>"; };
 		A29FB6CD26359DFD00E9190C /* Line+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Line+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A2BF8E252642C427007D2495 /* Transition between interfaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Transition between interfaces.app"; path = "/Users/ibrahimmushtaha/Desktop/Project/Transition between interfaces/build/Debug-iphoneos/Transition between interfaces.app"; sourceTree = "<absolute>"; };
+		A2BF8E262642C427007D2495 /* Transition between interfacesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Transition between interfacesTests.xctest"; path = "/Users/ibrahimmushtaha/Desktop/Project/Transition between interfaces/build/Debug-iphoneos/Transition between interfacesTests.xctest"; sourceTree = "<absolute>"; };
+		A2BF8E272642C427007D2495 /* Transition between interfacesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Transition between interfacesUITests.xctest"; path = "/Users/ibrahimmushtaha/Desktop/Project/Transition between interfaces/build/Debug-iphoneos/Transition between interfacesUITests.xctest"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +137,7 @@
 			);
 			name = "Transition between interfaces";
 			productName = "Transition between interfaces";
-			productReference = A25E3307262451880018221A /* Transition between interfaces.app */;
+			productReference = A2BF8E252642C427007D2495 /* Transition between interfaces.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A25E331C262451890018221A /* Transition between interfacesTests */ = {
@@ -155,7 +155,7 @@
 			);
 			name = "Transition between interfacesTests";
 			productName = "Transition between interfacesTests";
-			productReference = A25E331D262451890018221A /* Transition between interfacesTests.xctest */;
+			productReference = A2BF8E262642C427007D2495 /* Transition between interfacesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		A25E3327262451890018221A /* Transition between interfacesUITests */ = {
@@ -173,7 +173,7 @@
 			);
 			name = "Transition between interfacesUITests";
 			productName = "Transition between interfacesUITests";
-			productReference = A25E3328262451890018221A /* Transition between interfacesUITests.xctest */;
+			productReference = A2BF8E272642C427007D2495 /* Transition between interfacesUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
